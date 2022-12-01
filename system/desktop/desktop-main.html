@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="ROOT/metro-colors.min.css">
+    <link rel="stylesheet" type="text/css" href="ROOT/metro.min.css">
+    <link rel="stylesheet" type="text/css" href="metro-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="ROOT/metro-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="ROOT/metro-all.min.css">
+    <link rel="stylesheet" href="css/desktop.css" type="text/css">
+    <link rel="stylesheet" href="JS/QuestbookWindowing/src/css/winbox.css" type="text/css">
+    <link rel="stylesheet" href="css/windowingSystemStyling.css" type="text/css">
+
+    <script type="text/javascript" src="ROOT/JS/metro.min.js"></script>        
+    <script type="text/javascript" src="JS/desktop.js"></script>
+    <script type="text/javascript" src="JS/QuestbookWindowing/dist/winbox.bundle.min.js"></script>
+    <script type="text/javascript" src="JS/QuestbookWindowing/dist/js/winbox.min.js"></script>
+    <script type="text/javascript" src="ROOT/JS/jquery-3.4.1.min.js"></script>
+    <title>Questbook Rendering Service</title>
+    <style>
+        .desktop {
+            
+            background-image: url('img/wallpapers/YourWallaper000.png');
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+             background-size: cover;
+        }
+        #charm {
+            height: calc(100vh - 40px);
+            width: 396px;
+            background-color: red;
+        }
+        .task-bar{
+            background-color: rgb(49, 69, 73);
+            border-top-left-radius: 5px; /* Google themed layout this time!!! */
+            border-top-right-radius: 5px;
+            -webkit-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 5%;
+            
+        }
+        .tiles-grid {
+            margin: 10px;
+        }
+        #fullscreen-mode {
+            position: absolute;
+            left: 100%;
+            right:0;
+            top: 0;
+            bottom: 100%;
+            float: right;
+            color: #000000; 
+            cursor: pointer;
+        }
+        #app-title-span {
+            position: relative;
+            left: 0;
+            right: 100%;
+            top: 0;
+            bottom: 100%;
+            float: left;
+            color: #000000; 
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body class="m4-cloak" data-role="touch"> <!-- add touchscreen to this unique window manager -->
+    <div class="desktop"> 
+        <div class="window-area" style="margin: 10px;">
+            <script type="text/javascript" src="JS/WindowingSystem.js"></script>
+        </div>
+        <div class="task-bar">
+            <div class="task-bar-section" data-overlay="true" data-overlay-click-close="false">
+                <button class="task-bar-item"  data-hotkey="alt" data-duration="300" data-on-dropdown-create="true" id="start-menu-toggle"><span><img src="img/defaultQuestbook.png"></img></span></button>
+                <div class="start-menu" data-role="dropdown" data-toggle-element="#start-menu-toggle">
+                    <div class="start-menu-inner" data-overlay="true" data-overlay-click-close="true">
+                        <div class="explorer">
+                            <span id="app-title-span">System apps</span>
+                            <span class="mif-menu icon" id="fullscreen-mode" data-hotkey="alt+d" onclick="goFullscreenMode()"></span>
+                            <br>
+                            <hr><!---Google Material Design with Microsoft Metro UI-->
+                             <div class="tiles-grid tiles-group size-2 fg-white">
+                            <div data-role="tile" onclick="OpenTerminalWindow()" data-effect="hover-zoom-right" class="bg-black fg-white">
+                                <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                                    <p class="text-center">
+                                        Control your Linux system!
+                                    </p>
+                                </div>
+                                    <span class="mif-file-code icon"></span>
+                                    
+                            </div>
+                                 <div data-role="tile" data-size="wide" class="bg-blue fg-white">
+                                    <span class="mif-folder icon"></span>
+                                    <span class="branding-bar">Files</span>
+                                </div>
+                        
+                            <div onclick="OpenSettingsWindow()"data-role="tile" class="bg-red fg-white">
+                                <span class="mif-cog icon"></span>
+                                <span class="branding-bar">System Settings</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-bar-section tasks"></div>
+            <div class="task-bar-section system-tray ml-auto">
+                <span style="line-height: 40px;" class="pr-4">
+                    <span class="mif-network-wifi icon" title="Connect to internet"></span>
+                    <span data-role="clock" class="w-auto fg-white reduce-1" data-show-time="false" data-show-month="true" data-show-date="true" data-show-date="false"></span>
+                </span>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script> // Jquery only
+        $(function(){
+            $(".start-menu .explorer").click(goFullscreenMode()
+            {
+                $(this).toggleClass("active")
+            })
+        })
+</script>
+  
+</html>

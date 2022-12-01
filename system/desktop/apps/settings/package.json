@@ -1,0 +1,10 @@
+{
+  "name": "questbook-settings",
+  "productName": "System Settings",
+  "version": "1.0.0",
+  "description": "electron window for settings",
+  "main": "settings.js",
+  "": "",
+  "author": "Killopper2233",
+  "license": "ISC"
+}

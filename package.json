@@ -1,0 +1,53 @@
+{
+  "name": "qde",
+  "version": "0.0.1",
+  "description": "A Linux desktop environment based on the web.",
+  "node-main": "system/desktop/desktop-main.html",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "connect": "^3.7.0",
+    "debug": "^2.6.9",
+    "electron": "^21.2.0",
+    "electron-window-manager": "^1.0.6",
+    "express": "^4.18.2",
+    "media-typer": "^0.3.0",
+    "mime": "^1.6.0",
+    "ms": "^2.0.0",
+    "njs": "^0.0.2",
+    "node-wifi": "^2.0.16",
+    "nodejs": "^0.0.0",
+    "npm-build": "^0.0.1",
+    "object-inspect": "^1.12.2",
+    "qs": "^6.11.0",
+    "windowmanager": "^0.14.8",
+    "x11": "^2.3.0"
+  },
+  "scripts": {
+    "test": "npm run test",
+    "start": "electron ."
+    "dev": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killopper2233/QuestbookOS.git"
+  },
+  "keywords": [
+    "webos",
+    "questbook",
+    "javascript",
+    "linux",
+    "desktop",
+    "environment"
+  ],
+  "author": "killopper2233",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/killopper2233/QuestbookOS/issues"
+  },
+  "homepage": "https://github.com/killopper2233/QuestbookOS#readme",
+  "devDependencies": {
+    "nw": "^0.69.1",
+    "nw-builder": "^4.0.0-rc.8"
+  }
+}

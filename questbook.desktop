@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=QuestbookOS
+Exec=cd QuestbookDE && npm start
+Comment=Javascript based Desktop Environment
+icon=system/electron/defaultQuestbook.png

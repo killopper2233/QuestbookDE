@@ -1,0 +1,1 @@
+document.write('<div style="width: 100%; height:3.5%;" class="bg-dark fg-white"><button class="fg-white button flat-button mif-user mif-1.5x icon" onclick="window.location.href=''apps/system/lockscreen/lockscreen.html''"></button></div>');

@@ -1,8 +1,5 @@
-# About Questbook Window Manager (QWM)
-QuestbookWM is a web-based linux Window Manager. It looks like Windows 8 (and ChromeOS), but has some components that ChromiumOS / Google ChromeOS has to offer.
-
-## Electron based!
-Express.JS is no longer utilized, Electron and X11 will now be the middleman for this Window Manager to function. Also webkit rendering too!
+# What is Questbook Desktop Environment
+Questbook(DE) is a linux webkit based desktop environment. It looks like Windows 8 and ChromeOS, but functions like ChromiumoS.
 
 ### Screenshots:
 
@@ -26,3 +23,4 @@ Express.JS is no longer utilized, Electron and X11 will now be the middleman for
 
 # How to test this?
 Check out the release page and try out the latest (or oldest) version of QWM / QDM!
+Or clone the git repository!
