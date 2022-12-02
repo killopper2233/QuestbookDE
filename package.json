@@ -8,7 +8,7 @@
     "body-parser": "^1.20.1",
     "connect": "^3.7.0",
     "debug": "^2.6.9",
-    "electron": "^21.2.0",
+    "electron": "^21.3.3",
     "electron-window-manager": "^1.0.6",
     "express": "^4.18.2",
     "media-typer": "^0.3.0",
@@ -19,14 +19,23 @@
     "nodejs": "^0.0.0",
     "npm-build": "^0.0.1",
     "object-inspect": "^1.12.2",
+    "path": "^0.12.7",
     "qs": "^6.11.0",
+    "url": "^0.11.0",
     "windowmanager": "^0.14.8",
     "x11": "^2.3.0"
   },
+  "window": {
+    "title": "QDE",
+    "fullscreen": true,
+    "width": 1920,
+    "height": 1080,
+    "toolbar": false
+  },
   "scripts": {
     "test": "npm run test",
-    "start": "electron ."
-    "dev": "npm run dev"
+    "start": "electron .",
+    "dev": "nw /system/desktop/"
   },
   "repository": {
     "type": "git",
@@ -48,6 +57,6 @@
   "homepage": "https://github.com/killopper2233/QuestbookOS#readme",
   "devDependencies": {
     "nw": "^0.69.1",
-    "nw-builder": "^4.0.0-rc.8"
+    "nw-builder": "^4.0.2"
   }
 }

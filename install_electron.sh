@@ -13,4 +13,5 @@ npm install x11
 
 ### After installing.
 
-node electron .
+xinit
+npm start
