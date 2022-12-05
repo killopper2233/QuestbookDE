@@ -1,6 +1,8 @@
-### Warning before installation ### 
+### OPEN SOURCE ### 
 
-echo "Make sure to install openbox via your package manager"
+echo "Questbook Installer v0.12.1"
+echo ""
+echo "Make sure to install openbox via your package manager..."
 echo " "
 echo " "
 
@@ -11,11 +13,10 @@ npm install path
 npm install url
 npm install x11
 npm install fs
-sudo apt install plank
 
 ### After installing NPM packages.
 
-sudo mkdir ~/.config
+sudo mkdir ~/.config/
 sudo mv autostart.sh ~/local/.config/
 cd openbox && sudo mv openbox.desktop /usr/share/xsessions
 

@@ -1,8 +1,7 @@
 ## Adjust the screen res
-xrandr --size 1920x1080 &
+xrandr --output DVI-D-0 --auto --output HDMI-0 --auto --scale 1.65x1.65 --right-of DVI-D-0 &
 
-## start Desktop Environment
-plank
+## start the Desktop Environment
 cd && 
-cd Desktop/QuestbookDE && 
+cd QuestbookDE && 
 npm start

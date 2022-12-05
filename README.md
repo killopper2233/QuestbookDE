@@ -8,7 +8,7 @@ Questbook(DE) is a Electron based desktop environment that runs on openbox (Disp
 
 ![Screenshot 2022-05-21 6 37 49 PM](https://user-images.githubusercontent.com/61961329/169674050-601086d1-2225-4c00-86d0-cd2ba33c0360.png) Old design, no minor changes.
 
-![205521099-a740ea9f-5473-4cf7-a7d1-d38be5151294](assets/205521099-a740ea9f-5473-4cf7-a7d1-d38be5151294.png)New layout design, with start menuu.
+![205521099-a740ea9f-5473-4cf7-a7d1-d38be5151294](assets/205521099-a740ea9f-5473-4cf7-a7d1-d38be5151294.png)New layout design, with start menu.
 
 
 # Coming soon
