@@ -18,7 +18,7 @@
     <script type="text/javascript" src="JS/QuestbookWindowing/dist/winbox.bundle.min.js"></script>
     <script type="text/javascript" src="JS/QuestbookWindowing/dist/js/winbox.min.js"></script>
     <script type="text/javascript" src="ROOT/JS/jquery-3.4.1.min.js"></script>
-    <title>Questbook Rendering Service</title>
+    <title>Questbook Desktop</title>
     <style>
         .desktop {
             
@@ -69,7 +69,7 @@
         }
     </style>
 </head>
-<body class="m4-cloak" data-role="touch"> <!-- add touchscreen to this unique window manager -->
+<body class="m4-cloak" data-role="touch"> <!-- data-role-touch == enabled -->
     <div class="desktop"> 
         <div class="window-area" style="margin: 10px;">
             <script type="text/javascript" src="JS/WindowingSystem.js"></script>
@@ -121,13 +121,6 @@
     </div>
 </body>
 
-    <script> // Jquery only
-        $(function(){
-            $(".start-menu .explorer").click(goFullscreenMode()
-            {
-                $(this).toggleClass("active")
-            })
-        })
 </script>
   
 </html>

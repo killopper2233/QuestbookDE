@@ -41,20 +41,23 @@ x11.createClient(function(err, display) {
         icon: "system/electron/defaultQuestbook.png",
         frame: false,
         webPreferences: { 
-          experimentalFeatures: true, 
+          experimentalFeatures: false, 
           sandbox: true, 
         }
       })
 
       win.setPosition(0, 0);
 
+      
       win.loadURL(url.format({
         pathname: path.join(__dirname, 'system/desktop/desktop-main.html'),
         protocol: 'file:',
         slashes: true
       }));
-      console.log("Runtime environment started, please wait...");
+
+      console.log("Q-runtime environment started, please wait...");
   
 
     }
+    
     app.on('ready', createWindowManagerEnvironment);

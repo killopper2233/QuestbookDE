@@ -1,5 +1,5 @@
 # What is Questbook Desktop Environment
-Questbook(DE) is a linux webkit based desktop environment. It looks like Windows 8 and ChromeOS, but functions like ChromiumoS.
+Questbook(DE) is a Electron based desktop environment that runs on openbox (Display manager). It looks like Windows 8 and ChromeOS, but functions like ChromiumOS (Being Web-based!).
 
 ### Screenshots:
 
@@ -21,6 +21,9 @@ Questbook(DE) is a linux webkit based desktop environment. It looks like Windows
 * Wifi support
 * DBus support
 
-# How to test this?
+# How to install?
 Check out the release page and try out the latest (or oldest) version of QWM / QDM!
 Or clone the git repository!
+
+You need to first install Openbox via your distro's package manager (```apt, rpm, etc.```). Then let the script do the rest for you!
+After everything has been installed, your computer will reboot and from your Login Manager. Select "Questbook(QDE)" and start testing!
