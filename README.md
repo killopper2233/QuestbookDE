@@ -21,4 +21,4 @@ Or clone the git repository!
 You need to first install Openbox via your distro's package manager (```apt, rpm, etc.```). 
 
 Then let the script do the rest for you!
-After everything has been installed, your computer will reboot and from your Login Manager. Select "Questbook(QDE)" and start testing!
+After everything has been installed, your computer will reboot and from your Login Manager. Select "Questbook Desktop Environment" and start testing!
