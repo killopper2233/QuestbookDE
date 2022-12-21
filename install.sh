@@ -16,8 +16,7 @@ npm install fs
 
 ### After installing NPM packages.
 
-sudo mkdir ~/.config/
-sudo mv autostart.sh ~/local/.config/
+sudo mv autostart.sh ~/.config/
 cd openbox && sudo mv openbox.desktop /usr/share/xsessions
 
 ### Post installation
