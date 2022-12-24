@@ -14,7 +14,7 @@ sudo mv openbox/ .config
 sudo mv polybar/ .config
 
 
-echo "select option 1" # warn user before installing the polybar theme.
+echo "\033[32m Choose option 1 \033[0m" # warn user before installing the polybar theme.
 sleep 3s
 
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
