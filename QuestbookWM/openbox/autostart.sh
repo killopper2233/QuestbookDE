@@ -7,6 +7,6 @@ feh /home/Desktop/wallpaper.png
 
 cd
 cd .config/polybar &
-./launch.sh --forest &
+bash ~/.config/polybar/launch.sh --forest &
 xcompmgr &
 polybar &
