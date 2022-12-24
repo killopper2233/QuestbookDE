@@ -6,7 +6,7 @@ sudo apt install feh
 
 
 # git
-sudo apt install Rofi
+sudo apt install rofi
 sudo apt install calc
 
 # pre-git-installation
@@ -25,7 +25,7 @@ chmod +x setup.sh
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
 
 # post-git-installation
-sudo mv openbox.desktop /usr/share/xessions
+sudo mv openbox.desktop /usr/share/xsessions
 
 echo "rebooting your system, please wait 3s..."
 sleep 2s
