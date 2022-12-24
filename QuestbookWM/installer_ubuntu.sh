@@ -10,13 +10,8 @@ sudo apt install rofi
 sudo apt install calc
 
 # pre-git-installation
-sudo mv openbox .config
-cd openbox &&
-sudo mv autostart.sh ~/.config/openbox
-sudo mv rc.xml ~/.config/openbox
-cd ..
-
-sudo mv polybar .config
+sudo mv openbox/ .config
+sudo mv polybar/ .config
 
 
 echo "select option 1" # warn user before installing the polybar theme.
