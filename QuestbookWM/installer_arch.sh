@@ -3,15 +3,16 @@ sudo pacman -S polybar
 sudo pacman -S openbox
 sudo pacman -S git
 sudo pacman -S feh
-
+sudo mv assets/wallpaper.png /home/Desktop/
 
 # git
 sudo pacman -S rofi
 sudo pacman -S calc
 
 # pre-git-installation
-sudo mv polybar .config
-sudo mv openbox .config
+
+sudo mv openbox/ .config
+sudo mv polybar/ .config
 
 echo "select option 1" # warn user before installing the polybar theme.
 sleep 3s

@@ -1,17 +1,22 @@
 ### installer script for Red Hat based
-sudo rpm install polybar
-sudo rpm install openbox
-sudo rpm install git
-sudo rpm install feh
-
+sudo dnf install polybar
+sudo dnf install openbox
+sudo dnf install git
+sudo dnf install feh
+sudo mv assets/wallpaper.png /home/Desktop/
 
 # git
-sudo rpm install rofi
-sudo rpm install calc
+sudo dnf install rofi
+sudo dnf install calc
 
 # pre-git-installation
-sudo mv polybar .config
 sudo mv openbox .config
+cd openbox &&
+sudo mv autostart.sh ~/.config/openbox
+sudo mv rc.xml ~/.config/openbox
+cd ..
+
+sudo mv polybar .config
 
 echo "select option 1" # warn user before installing the polybar theme.
 sleep 3s
