@@ -1,33 +1,41 @@
+### Install Nala to enable parallel downloading 
+
+sudo apt install nala
+
 ### installer script for Ubuntu / Debian
-sudo apt install polybar
-sudo apt install openbox
-sudo apt install git
-sudo apt install feh
-sudo mv assets/wallpaper.png /home/Desktop/
+sudo nala install polybar openbox git feh neofetch rofi calc
 
-# git
-sudo apt install rofi
-sudo apt install calc
+### Download QuestbookWM Repo
 
-# pre-git-installation
-sudo mv openbox/ ~/.config
-sudo mv polybar/ ~/.config
+echo "Do you wish to download and install QuestbookWM?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) mkdir ~/questbook && cd ~/questbook && git clone --depth=1  https://github.com/killopper2233/QuestbookWM.git && cd QuestbookWM/QuestbookWM &&sudo mv openbox/ ~/.config && sudo mv polybar/ ~/.config; break;;
+        No ) exit;;
+    esac
+done
 
-
-echo \033[32m Choose option 1 \033[0m # warn user before installing the polybar theme.
+# Wait 3 seconds
 sleep 3s
 
-git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-cd polybar-themes
-chmod +x setup.sh
-
-./setup.sh
-
-git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
+#Ask the user if they want to install the polybar theme
+echo "Do you wish to install a polybar theme?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) git clone --depth=1 https://github.com/adi1090x/polybar-themes.git && cd polybar-themes && chmod +x setup.sh && ./setup.sh && git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes; break;;
+        No ) exit;;
+    esac
+done
 
 # post-git-installation
-sudo mv openbox.desktop /usr/share/xsessions
+sudo wget https://github.com/killopper2233/QuestbookWM/blob/main/QuestbookWM/openbox.desktop /usr/share/xsessions
 
-echo "rebooting your system, please wait 3s..."
-sleep 2s
-reboot
+# Moves wallpaper to system wallpaper folder
+sudo wget https://github.com/killopper2233/QuestbookWM/raw/main/QuestbookWM/assets/wallpaper.png /usr/share/backgrounds
+
+# Change BashRC to incorporate a reminder
+wget https://github.com/Sprungles/.configs/blob/main/bashrc ~/.bashrc
+
+echo "logging out your system, please wait 3s..."
+sleep 1s
+gnome-session-quit
