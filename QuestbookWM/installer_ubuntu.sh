@@ -10,7 +10,7 @@ sudo nala install polybar openbox git feh neofetch rofi calc
 echo "Do you wish to download and install QuestbookWM?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) mkdir ~/questbook && cd ~/questbook && git clone --depth=1  https://github.com/killopper2233/QuestbookWM.git && cd QuestbookWM/QuestbookWM &&sudo mv openbox/ ~/.config && sudo mv polybar/ ~/.config; break;;
+        Yes ) mkdir ~/questbook && cd ~/questbook && git clone --depth=1  https://github.com/killopper2233/QuestbookWM.git && cd QuestbookWM/QuestbookWM &&sudo mv openbox/ ~/.config && sudo mv polybar/ ~/.config && cd ~/ && rm -rf ~/questbook ; break;;
         No ) exit;;
     esac
 done
@@ -22,7 +22,7 @@ sleep 3s
 echo "Do you wish to install a polybar theme?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) git clone --depth=1 https://github.com/adi1090x/polybar-themes.git && cd polybar-themes && chmod +x setup.sh && ./setup.sh && git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes; break;;
+        Yes ) cd ~/ &&  git clone --depth=1 https://github.com/adi1090x/polybar-themes.git && cd polybar-themes && chmod +x setup.sh && ./setup.sh && git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes && cd ~/ && sudo rm -rf ~/polybar-themes ; break;;
         No ) exit;;
     esac
 done
