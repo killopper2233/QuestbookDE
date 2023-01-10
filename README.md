@@ -19,8 +19,8 @@ To install this, make sure to have the required Linux distro(s). BSD releases ca
 
 
 # How to install?
-```installer_ubuntu.sh``` for Ubuntu / Debian based distros.
-```installer_arch.sh``` for Arch Linux based distros.
+```installer_ubuntu.sh``` for Ubuntu / Debian based distros.<br>
+```installer_arch.sh``` for Arch Linux based distros.<br>
 ```installer_redhat.sh``` for Redhat based distros. (Includes Opensuse, Fedora, etc).
 
 After installing, your system should restart and during your login manager; select ```Questbook Window Manager``` and start enjoying your new WM!!

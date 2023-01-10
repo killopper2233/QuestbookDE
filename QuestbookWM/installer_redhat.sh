@@ -1,5 +1,5 @@
-### installer script for Ubuntu / Debian
-sudo dnf install polybar openbox git feh neofetch rofi calc
+### installer script for RedHat based distros.
+sudo dnf install plank polybar openbox git feh neofetch rofi calc
 
 ### Download QuestbookWM Repo
 

@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Triste-Violet</name>
+    <name>Vent</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -58,7 +58,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Ubuntu Light</name>
-      <size>6</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -76,7 +76,7 @@
     </font>
     <font place="MenuHeader">
       <name>Ubuntu weight=255</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +85,7 @@
     </font>
     <font place="MenuItem">
       <name>Ubuntu Light</name>
-      <size>6</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,7 +94,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Ubuntu Light</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,7 +103,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Ubuntu Light</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -153,10 +153,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>37</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>1</top>
+    <bottom>1</bottom>
+    <left>1</left>
+    <right>1</right>
   </margins>
   <dock>
     <position>Bottom</position>
@@ -260,13 +260,12 @@
       <action name="Unfocus"/>
     </keybind>
     <keybind key="A-space">
-  <action name="ShowMenu">
-    <!--
+      <action name="ShowMenu">
+        <!--
     <menu>client-list-menu</menu>
     -->
-    <menu>client-list-combined-menu</menu>
-  </action>
-
+        <menu>client-list-combined-menu</menu>
+      </action>
     </keybind>
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
@@ -277,7 +276,7 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-      <bar>no</bar>
+        <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>

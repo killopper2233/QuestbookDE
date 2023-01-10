@@ -1,5 +1,9 @@
+### Install Nala to enable parallel downloading 
+
+sudo pacman -S nala
+
 ### installer script for Ubuntu / Debian
-sudo pacman -S polybar openbox git feh neofetch rofi calc
+sudo nala install polybar openbox git feh neofetch rofi calc
 
 ### Download QuestbookWM Repo
 
