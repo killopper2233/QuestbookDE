@@ -3,7 +3,7 @@
 sudo pacman -S nala
 
 ### installer script for Ubuntu / Debian
-sudo nala install polybar openbox git feh neofetch rofi calc
+sudo nala install plank openbox git feh neofetch rofi calc
 
 ### Download QuestbookWM Repo
 
@@ -18,14 +18,9 @@ done
 # Wait 3 seconds
 sleep 3s
 
-#Ask the user if they want to install the polybar theme
-echo "Do you wish to install a polybar theme?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) cd ~/ &&  git clone --depth=1 https://github.com/adi1090x/polybar-themes.git && cd polybar-themes && chmod +x setup.sh && ./setup.sh && git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes && cd ~/ && sudo rm -rf ~/polybar-themes ; break;;
-        No ) exit;;
-    esac
-done
+#Polybar is no longer used; install Plank and the theme.
+echo "Installing plank theme..."
+cd Theme && sudo mv Questbook.theme ~/.local/share/plank/themes
 
 # post-git-installation
 sudo wget https://github.com/killopper2233/QuestbookWM/blob/main/QuestbookWM/openbox.desktop /usr/share/xsessions
