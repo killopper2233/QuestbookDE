@@ -1,5 +1,5 @@
 ### installer script for RedHat based distros.
-sudo dnf install plank polybar openbox git feh neofetch rofi calc
+sudo dnf install plank openbox git feh neofetch rofi calc
 
 ### Download QuestbookWM Repo
 
@@ -12,20 +12,23 @@ select yn in "Yes" "No"; do
 done
 
 # Wait 3 seconds
+echo "Please wait 3 seconds..."
 sleep 3s
 
 #Polybar is no longer used; install Plank and the theme.
 echo "Installing plank theme..."
-cd Theme && sudo mv Questbook.theme ~/.local/share/plank/themes
+sudo mv Shell /usr/share/plank/themes/
 
 # post-git-installation
-sudo wget https://github.com/killopper2233/QuestbookWM/blob/main/QuestbookWM/openbox.desktop /usr/share/xsessions
+cd ~/QuestbookWM/QuestbookWM/ &&
+sudo mv openbox.desktop /usr/share/xsessions &&
+sudo mv ~/QuestbookWM/QuestbookWM/openbox/ ~/.config
 
 # Moves wallpaper to system wallpaper folder
-sudo wget https://github.com/killopper2233/QuestbookWM/raw/main/QuestbookWM/assets/wallpaper.png /usr/share/backgrounds
+sudo mv ~/QuestbookWM/QuestbookWM/assets/wallpaper.png /usr/share/backgrounds
 
 # Change BashRC to incorporate a reminder
-wget https://github.com/Sprungles/.configs/blob/main/bashrc ~/.bashrc
+# wget https://github.com/Sprungles/.configs/blob/main/bashrc ~/.bashrc
 
 echo "logging out your system, please wait 3s..."
 sleep 1s
