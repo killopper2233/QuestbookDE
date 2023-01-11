@@ -3,7 +3,7 @@
 sudo pacman -S nala
 
 ### installer script for Ubuntu / Debian
-sudo nala install plank openbox git feh neofetch rofi calc
+sudo nala install plank openbox git feh neofetch calc
 
 ### Download QuestbookWM Repo
 

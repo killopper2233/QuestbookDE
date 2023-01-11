@@ -1,5 +1,5 @@
 ### installer script for RedHat based distros.
-sudo dnf install plank openbox git feh neofetch rofi calc
+sudo dnf install plank openbox git feh neofetch calc
 
 ### Download QuestbookWM Repo
 
